@@ -1,0 +1,6 @@
+{
+  "name": "Arcade100 - Free Online Games Hub",
+  "description": "Play 100 free online games across Arcade, Puzzle, Sports, Cards, Casual, and Retro classics with mobile touch controls and instant browser gameplay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
