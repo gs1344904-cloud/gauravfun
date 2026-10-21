@@ -169,7 +169,7 @@ export const CheckersGame: React.FC = () => {
                     <div
                       className={`w-8 h-8 rounded-full border-2 flex items-center justify-center font-bold text-xs shadow-md ${
                         cell.startsWith('R')
-                          ? 'bg-red-600 border-red-300 text-white'
+                          ? 'bg-red-600 border-red-300 text-neutral-950'
                           : 'bg-neutral-900 border-neutral-600 text-amber-400'
                       }`}
                     >

@@ -130,7 +130,7 @@ export const SpaceInvadersGame: React.FC = () => {
       // Draw Invaders
       invaders.current.forEach((inv) => {
         if (!inv.alive) return;
-        ctx.fillStyle = inv.type === 0 ? '#ef4444' : inv.type === 1 ? '#f59e0b' : '#3b82f6';
+        ctx.fillStyle = inv.type === 0 ? '#686868' : inv.type === 1 ? '#a6a6a6' : '#7b7b7b';
         ctx.fillRect(inv.x, inv.y, 22, 16);
         ctx.fillStyle = '#ffffff';
         ctx.fillRect(inv.x + 4, inv.y + 4, 4, 4);
@@ -138,13 +138,13 @@ export const SpaceInvadersGame: React.FC = () => {
       });
 
       // Draw Lasers
-      ctx.fillStyle = '#22c55e';
+      ctx.fillStyle = '#9b9b9b';
       lasers.current.forEach((l) => {
         ctx.fillRect(l.x, l.y, 3, 10);
       });
 
       // Draw Player Tank
-      ctx.fillStyle = '#f59e0b';
+      ctx.fillStyle = '#a6a6a6';
       ctx.fillRect(playerX.current, 320, 24, 14);
       ctx.fillRect(playerX.current + 9, 312, 6, 8);
 

@@ -166,7 +166,7 @@ export const SoccerPenaltyGame: React.FC = () => {
             <div className="w-8 h-8 rounded-full bg-amber-300 border-2 border-neutral-900 shadow-md flex items-center justify-center text-xs">
               🧤
             </div>
-            <div className="w-10 h-12 bg-red-600 rounded-t-lg border border-neutral-900 flex items-center justify-center text-[10px] text-white font-bold">
+            <div className="w-10 h-12 bg-red-600 rounded-t-lg border border-neutral-900 flex items-center justify-center text-[10px] text-neutral-950 font-bold">
               1
             </div>
           </div>

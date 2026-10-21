@@ -105,7 +105,7 @@ export const SimonPatternGame: React.FC = () => {
             onClick={() => handlePadClick('GREEN')}
             className={`rounded-tl-full transition-all duration-150 ${
               activePad === 'GREEN'
-                ? 'bg-emerald-400 scale-95 shadow-[0_0_20px_#34d399]'
+                ? 'bg-emerald-400 scale-95 shadow-[0_0_20px_#adadad]'
                 : 'bg-emerald-700 hover:bg-emerald-600'
             }`}
           />
@@ -113,7 +113,7 @@ export const SimonPatternGame: React.FC = () => {
             onClick={() => handlePadClick('RED')}
             className={`rounded-tr-full transition-all duration-150 ${
               activePad === 'RED'
-                ? 'bg-red-400 scale-95 shadow-[0_0_20px_#f87171]'
+                ? 'bg-red-400 scale-95 shadow-[0_0_20px_#8e8e8e]'
                 : 'bg-red-700 hover:bg-red-600'
             }`}
           />
@@ -121,7 +121,7 @@ export const SimonPatternGame: React.FC = () => {
             onClick={() => handlePadClick('YELLOW')}
             className={`rounded-bl-full transition-all duration-150 ${
               activePad === 'YELLOW'
-                ? 'bg-amber-300 scale-95 shadow-[0_0_20px_#fcd34d]'
+                ? 'bg-amber-300 scale-95 shadow-[0_0_20px_#d2d2d2]'
                 : 'bg-amber-600 hover:bg-amber-500'
             }`}
           />
@@ -129,7 +129,7 @@ export const SimonPatternGame: React.FC = () => {
             onClick={() => handlePadClick('BLUE')}
             className={`rounded-br-full transition-all duration-150 ${
               activePad === 'BLUE'
-                ? 'bg-blue-400 scale-95 shadow-[0_0_20px_#60a5fa]'
+                ? 'bg-blue-400 scale-95 shadow-[0_0_20px_#9c9c9c]'
                 : 'bg-blue-700 hover:bg-blue-600'
             }`}
           />

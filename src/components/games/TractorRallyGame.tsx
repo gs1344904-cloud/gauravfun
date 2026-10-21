@@ -104,22 +104,22 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
 
       // Draw GT Road Background
       // Grass / Mustard Fields on borders
-      ctx.fillStyle = '#ca8a04'; // Mustard gold field left
+      ctx.fillStyle = '#8e8e8e'; // Mustard gold field left
       ctx.fillRect(0, 0, 40, canvas.height);
-      ctx.fillStyle = '#16a34a'; // Green crops
+      ctx.fillStyle = '#7f7f7f'; // Green crops
       ctx.fillRect(5, 0, 30, canvas.height);
 
-      ctx.fillStyle = '#ca8a04'; // Mustard gold field right
+      ctx.fillStyle = '#8e8e8e'; // Mustard gold field right
       ctx.fillRect(360, 0, 40, canvas.height);
-      ctx.fillStyle = '#16a34a';
+      ctx.fillStyle = '#7f7f7f';
       ctx.fillRect(365, 0, 30, canvas.height);
 
       // Asphalt Road
-      ctx.fillStyle = '#1f2937';
+      ctx.fillStyle = '#282828';
       ctx.fillRect(40, 0, 320, canvas.height);
 
       // Road boundary lines
-      ctx.strokeStyle = '#e5e7eb';
+      ctx.strokeStyle = '#e7e7e7';
       ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.moveTo(42, 0);
@@ -132,7 +132,7 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
       if (state.isPlaying) {
         state.roadOffset = (state.roadOffset + state.speed) % 40;
       }
-      ctx.strokeStyle = '#facc15';
+      ctx.strokeStyle = '#c9c9c9';
       ctx.lineWidth = 2;
       ctx.setLineDash([20, 20]);
       ctx.lineDashOffset = -state.roadOffset;
@@ -191,9 +191,9 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
           // Draw obstacle
           if (obs.type === 'truck') {
             // Desi Truck
-            ctx.fillStyle = '#dc2626';
+            ctx.fillStyle = '#4d4d4d';
             ctx.fillRect(obs.x - obs.width / 2, obs.y, obs.width, obs.height);
-            ctx.fillStyle = '#f59e0b';
+            ctx.fillStyle = '#a6a6a6';
             ctx.fillRect(obs.x - obs.width / 2 + 4, obs.y + 4, obs.width - 8, 14); // Windshield
             // Truck art text
             ctx.fillStyle = '#ffffff';
@@ -201,13 +201,13 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
             ctx.fillText('PBX', obs.x - 8, obs.y + 36);
           } else if (obs.type === 'car') {
             // Normal car
-            ctx.fillStyle = '#2563eb';
+            ctx.fillStyle = '#606060';
             ctx.fillRect(obs.x - obs.width / 2, obs.y, obs.width, obs.height);
-            ctx.fillStyle = '#93c5fd';
+            ctx.fillStyle = '#bebebe';
             ctx.fillRect(obs.x - obs.width / 2 + 3, obs.y + 8, obs.width - 6, 12);
           } else if (obs.type === 'fuel') {
             // Fuel Jerry Can
-            ctx.fillStyle = '#10b981';
+            ctx.fillStyle = '#919191';
             ctx.beginPath();
             ctx.arc(obs.x, obs.y + 15, 14, 0, Math.PI * 2);
             ctx.fill();
@@ -216,7 +216,7 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
             ctx.fillText('⚡', obs.x - 5, obs.y + 19);
           } else if (obs.type === 'record') {
             // Gold Vinyl Record
-            ctx.fillStyle = '#d97706';
+            ctx.fillStyle = '#848484';
             ctx.beginPath();
             ctx.arc(obs.x, obs.y + 15, 14, 0, Math.PI * 2);
             ctx.fill();
@@ -262,7 +262,7 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
       const pY = canvas.height - 85;
 
       // Big Tractor Rear Wheels
-      ctx.fillStyle = '#111827';
+      ctx.fillStyle = '#181818';
       ctx.fillRect(pX - 22, pY + 28, 8, 32); // Left rear tire
       ctx.fillRect(pX + 14, pY + 28, 8, 32); // Right rear tire
 
@@ -271,18 +271,18 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
       ctx.fillRect(pX + 12, pY + 2, 6, 18);
 
       // Red Tractor Body Bonnet
-      ctx.fillStyle = '#b91c1c';
+      ctx.fillStyle = '#3d3d3d';
       ctx.fillRect(pX - 12, pY + 5, 24, 45);
 
       // Tractor Hood Detail / 5911
-      ctx.fillStyle = '#f59e0b';
+      ctx.fillStyle = '#a6a6a6';
       ctx.fillRect(pX - 10, pY + 10, 20, 10);
       ctx.fillStyle = '#000000';
       ctx.font = 'bold 7px sans-serif';
       ctx.fillText('5911', pX - 8, pY + 18);
 
       // Silencer / Exhaust Pipe with smoke puffs
-      ctx.fillStyle = '#4b5563';
+      ctx.fillStyle = '#545454';
       ctx.fillRect(pX + 8, pY - 5, 3, 14);
 
       if (state.isPlaying && Math.random() < 0.4) {
@@ -293,13 +293,13 @@ export const TractorRallyGame: React.FC<{ onGameOver?: (score: number) => void }
       }
 
       // Headlights glow
-      ctx.fillStyle = '#fef08a';
+      ctx.fillStyle = '#ececec';
       ctx.beginPath();
       ctx.moveTo(pX - 10, pY);
       ctx.lineTo(pX - 25, pY - 45);
       ctx.lineTo(pX + 25, pY - 45);
       ctx.lineTo(pX + 10, pY);
-      ctx.fillStyle = 'rgba(254, 240, 138, 0.12)';
+      ctx.fillStyle = 'rgba(236, 236, 236, 0.12)';
       ctx.fill();
 
       animId = requestAnimationFrame(gameLoop);

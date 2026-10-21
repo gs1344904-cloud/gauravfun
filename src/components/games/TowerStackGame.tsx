@@ -15,7 +15,7 @@ export const TowerStackGame: React.FC = () => {
   const [highScore, setHighScore] = useState(0);
   const [isGameOver, setIsGameOver] = useState(false);
   const [blocks, setBlocks] = useState<Block[]>([
-    { x: 50, y: 320, width: 200, color: '#f59e0b' },
+    { x: 50, y: 320, width: 200, color: '#a6a6a6' },
   ]);
 
   const currentX = useRef(20);
@@ -25,13 +25,13 @@ export const TowerStackGame: React.FC = () => {
   const [, setTick] = useState(0);
 
   const COLORS = [
-    '#f59e0b',
-    '#ef4444',
-    '#10b981',
-    '#3b82f6',
-    '#8b5cf6',
-    '#ec4899',
-    '#06b6d4',
+    '#a6a6a6',
+    '#686868',
+    '#919191',
+    '#7b7b7b',
+    '#717171',
+    '#717171',
+    '#939393',
   ];
 
   useEffect(() => {
@@ -112,7 +112,7 @@ export const TowerStackGame: React.FC = () => {
     currentX.current = 20;
     currentWidth.current = 200;
     currentDirection.current = 1;
-    setBlocks([{ x: 50, y: 320, width: 200, color: '#f59e0b' }]);
+    setBlocks([{ x: 50, y: 320, width: 200, color: '#a6a6a6' }]);
     setIsGameOver(false);
   };
 

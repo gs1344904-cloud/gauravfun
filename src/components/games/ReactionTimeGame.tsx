@@ -75,7 +75,7 @@ export const ReactionTimeGame: React.FC = () => {
             : state === 'WAITING'
             ? 'bg-red-900/90 text-white'
             : state === 'READY'
-            ? 'bg-emerald-600 text-white font-extrabold animate-pulse'
+            ? 'bg-emerald-600 text-neutral-950 font-extrabold animate-pulse'
             : state === 'TOO_EARLY'
             ? 'bg-amber-900 text-amber-100'
             : 'bg-neutral-800 text-neutral-100'

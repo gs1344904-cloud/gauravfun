@@ -250,13 +250,13 @@ export const BlackjackGame: React.FC = () => {
         <div className="flex gap-4 w-full">
           <button
             onClick={hit}
-            className="flex-1 py-3 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-400 text-white font-bold rounded-lg text-sm shadow-md"
+            className="flex-1 py-3 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-400 text-neutral-950 font-bold rounded-lg text-sm shadow-md"
           >
             HIT
           </button>
           <button
             onClick={stand}
-            className="flex-1 py-3 bg-red-600 hover:bg-red-500 active:bg-red-400 text-white font-bold rounded-lg text-sm shadow-md"
+            className="flex-1 py-3 bg-red-600 hover:bg-red-500 active:bg-red-400 text-neutral-950 font-bold rounded-lg text-sm shadow-md"
           >
             STAND
           </button>

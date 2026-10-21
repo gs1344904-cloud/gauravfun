@@ -72,16 +72,16 @@ export const FlappyMooseGame: React.FC = () => {
 
       // Sky background gradient
       const skyGrad = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      skyGrad.addColorStop(0, '#0f172a');
-      skyGrad.addColorStop(0.7, '#1e293b');
-      skyGrad.addColorStop(1, '#854d0e'); // Golden evening fields
+      skyGrad.addColorStop(0, '#171717');
+      skyGrad.addColorStop(0.7, '#282828');
+      skyGrad.addColorStop(1, '#545454'); // Golden evening fields
       ctx.fillStyle = skyGrad;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Distant Punjab fields & silhouettes
-      ctx.fillStyle = '#713f12';
+      ctx.fillStyle = '#464646';
       ctx.fillRect(0, canvas.height - 30, canvas.width, 30);
-      ctx.fillStyle = '#15803d';
+      ctx.fillStyle = '#646464';
       ctx.fillRect(0, canvas.height - 35, canvas.width, 7);
 
       if (state.isPlaying) {
@@ -117,15 +117,15 @@ export const FlappyMooseGame: React.FC = () => {
           pipe.x -= 2.2;
 
           // Top pipe
-          ctx.fillStyle = '#1e3a8a';
+          ctx.fillStyle = '#3a3a3a';
           ctx.fillRect(pipe.x, 0, 52, pipe.top);
-          ctx.fillStyle = '#f59e0b';
+          ctx.fillStyle = '#a6a6a6';
           ctx.fillRect(pipe.x - 3, pipe.top - 16, 58, 16); // Pillar cap
 
           // Bottom pipe
-          ctx.fillStyle = '#1e3a8a';
+          ctx.fillStyle = '#3a3a3a';
           ctx.fillRect(pipe.x, pipe.bottom, 52, canvas.height - pipe.bottom);
-          ctx.fillStyle = '#f59e0b';
+          ctx.fillStyle = '#a6a6a6';
           ctx.fillRect(pipe.x - 3, pipe.bottom, 58, 16); // Pillar cap
 
           // Check score pass
@@ -160,19 +160,19 @@ export const FlappyMooseGame: React.FC = () => {
       const bY = state.birdY;
 
       // Glow aura
-      ctx.fillStyle = 'rgba(245, 158, 11, 0.25)';
+      ctx.fillStyle = 'rgba(166, 166, 166, 0.25)';
       ctx.beginPath();
       ctx.arc(bX, bY, 20, 0, Math.PI * 2);
       ctx.fill();
 
       // Vintage Shure Microphone Capsule (Iconic Sidhu Stage Mic)
-      ctx.fillStyle = '#d4d4d8';
+      ctx.fillStyle = '#d4d4d4';
       ctx.beginPath();
       ctx.arc(bX, bY - 4, 11, 0, Math.PI * 2);
       ctx.fill();
 
       // Mic metal grill lines
-      ctx.strokeStyle = '#52525b';
+      ctx.strokeStyle = '#535353';
       ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.moveTo(bX - 9, bY - 4);
@@ -182,11 +182,11 @@ export const FlappyMooseGame: React.FC = () => {
       ctx.stroke();
 
       // Mic Handle
-      ctx.fillStyle = '#b91c1c'; // Red handle
+      ctx.fillStyle = '#3d3d3d'; // Red handle
       ctx.fillRect(bX - 4, bY + 6, 8, 16);
 
       // Wing feathers
-      ctx.fillStyle = '#f59e0b';
+      ctx.fillStyle = '#a6a6a6';
       ctx.beginPath();
       ctx.ellipse(bX - 8, bY + (state.velocity > 0 ? -2 : 4), 8, 4, -0.2, 0, Math.PI * 2);
       ctx.fill();

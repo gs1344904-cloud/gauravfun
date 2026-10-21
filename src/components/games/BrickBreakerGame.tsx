@@ -38,7 +38,7 @@ export const BrickBreakerGame: React.FC = () => {
     const padding = 6;
     const offsetLeft = 14;
     const offsetTop = 40;
-    const colors = ['#dc2626', '#ea580c', '#eab308', '#16a34a', '#2563eb'];
+    const colors = ['#4d4d4d', '#727272', '#b2b2b2', '#7f7f7f', '#606060'];
 
     const bricks: Brick[] = [];
     for (let r = 0; r < rows; r++) {
@@ -95,7 +95,7 @@ export const BrickBreakerGame: React.FC = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Background
-      ctx.fillStyle = '#0f172a';
+      ctx.fillStyle = '#171717';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Draw Bricks
@@ -108,9 +108,9 @@ export const BrickBreakerGame: React.FC = () => {
       });
 
       // Draw Paddle
-      ctx.fillStyle = '#f59e0b';
+      ctx.fillStyle = '#a6a6a6';
       ctx.fillRect(state.paddleX, canvas.height - 24, state.paddleW, 10);
-      ctx.fillStyle = '#fef08a';
+      ctx.fillStyle = '#ececec';
       ctx.fillRect(state.paddleX + 15, canvas.height - 24, state.paddleW - 30, 3);
 
       // Draw Ball

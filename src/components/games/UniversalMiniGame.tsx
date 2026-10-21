@@ -249,7 +249,7 @@ export const UniversalMiniGame: React.FC<UniversalMiniGameProps> = ({ game }) =>
         y: playerY,
         vx: Math.cos(angle) * 7,
         vy: Math.sin(angle) * 7,
-        color: '#f59e0b',
+        color: '#a6a6a6',
       });
     };
 
@@ -265,7 +265,7 @@ export const UniversalMiniGame: React.FC<UniversalMiniGameProps> = ({ game }) =>
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Grid lines
-      ctx.strokeStyle = '#1e293b30';
+      ctx.strokeStyle = '#28282830';
       ctx.lineWidth = 1;
       for (let x = 0; x < canvas.width; x += 30) {
         ctx.beginPath();
@@ -289,7 +289,7 @@ export const UniversalMiniGame: React.FC<UniversalMiniGameProps> = ({ game }) =>
             y: 0,
             r: 14 + Math.random() * 8,
             vy: 1.8 + Math.random() * 2,
-            color: Math.random() > 0.5 ? '#ef4444' : '#3b82f6',
+            color: Math.random() > 0.5 ? '#686868' : '#7b7b7b',
           });
         }
 
@@ -341,7 +341,7 @@ export const UniversalMiniGame: React.FC<UniversalMiniGameProps> = ({ game }) =>
         }
 
         // Draw Player Turret / Vessel
-        ctx.fillStyle = '#f59e0b';
+        ctx.fillStyle = '#a6a6a6';
         ctx.beginPath();
         ctx.arc(playerX, playerY, 16, 0, Math.PI * 2);
         ctx.fill();
