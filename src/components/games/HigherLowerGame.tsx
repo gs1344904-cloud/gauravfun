@@ -173,7 +173,7 @@ export const HigherLowerGame: React.FC = () => {
         <button
           onClick={() => makeGuess('higher')}
           disabled={isGameOver}
-          className="py-3.5 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-black rounded-xl text-sm shadow-xl transition-transform cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
+          className="py-3.5 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-neutral-950 font-black rounded-xl text-sm shadow-xl transition-transform cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
         >
           <ArrowUp className="w-4 h-4" />
           <span>HIGHER ▲</span>
@@ -182,7 +182,7 @@ export const HigherLowerGame: React.FC = () => {
         <button
           onClick={() => makeGuess('lower')}
           disabled={isGameOver}
-          className="py-3.5 bg-rose-600 hover:bg-rose-500 active:scale-95 text-white font-black rounded-xl text-sm shadow-xl transition-transform cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
+          className="py-3.5 bg-rose-600 hover:bg-rose-500 active:scale-95 text-neutral-950 font-black rounded-xl text-sm shadow-xl transition-transform cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
         >
           <ArrowDown className="w-4 h-4" />
           <span>LOWER ▼</span>

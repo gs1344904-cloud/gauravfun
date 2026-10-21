@@ -4,14 +4,14 @@ import confetti from 'canvas-confetti';
 import { RotateCcw, Trophy, Sparkles } from 'lucide-react';
 
 const PRIZES = [
-  { label: '500 Coins', pts: 500, color: '#f59e0b' },
-  { label: '50 Coins', pts: 50, color: '#3b82f6' },
-  { label: '1000 JACKPOT', pts: 1000, color: '#ef4444' },
-  { label: '100 Coins', pts: 100, color: '#10b981' },
-  { label: '250 Coins', pts: 250, color: '#8b5cf6' },
-  { label: '20 Coins', pts: 20, color: '#6b7280' },
-  { label: '750 Coins', pts: 750, color: '#ec4899' },
-  { label: 'DOUBLE x2', pts: 400, color: '#06b6d4' },
+  { label: '500 Coins', pts: 500, color: '#ffffff' },
+  { label: '50 Coins', pts: 50, color: '#0a0a0a' },
+  { label: '1000 JACKPOT', pts: 1000, color: '#ffffff' },
+  { label: '100 Coins', pts: 100, color: '#0a0a0a' },
+  { label: '250 Coins', pts: 250, color: '#ffffff' },
+  { label: '20 Coins', pts: 20, color: '#0a0a0a' },
+  { label: '750 Coins', pts: 750, color: '#ffffff' },
+  { label: 'DOUBLE x2', pts: 400, color: '#0a0a0a' },
 ];
 
 export const SpinWheelGame: React.FC = () => {
@@ -97,7 +97,7 @@ export const SpinWheelGame: React.FC = () => {
                 clipPath: 'polygon(50% 50%, 30% 0%, 70% 0%)',
               }}
             >
-              <span className="text-[9px] font-black text-white uppercase tracking-tighter mt-2 shadow-xs">
+              <span className={`text-[9px] font-black uppercase tracking-tighter mt-2 shadow-xs ${p.color === '#ffffff' ? 'text-black' : 'text-white'}`}>
                 {p.label}
               </span>
             </div>

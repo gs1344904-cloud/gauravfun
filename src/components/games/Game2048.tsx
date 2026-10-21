@@ -164,14 +164,14 @@ export const Game2048: React.FC = () => {
     switch (val) {
       case 2: return 'bg-neutral-800 text-neutral-200 border-neutral-700';
       case 4: return 'bg-neutral-700 text-neutral-100 border-neutral-600';
-      case 8: return 'bg-amber-600 text-white border-amber-500';
-      case 16: return 'bg-orange-600 text-white border-orange-500';
-      case 32: return 'bg-red-600 text-white border-red-500';
-      case 64: return 'bg-rose-700 text-white border-rose-600';
+      case 8: return 'bg-amber-600 text-neutral-950 border-amber-500';
+      case 16: return 'bg-orange-600 text-neutral-950 border-orange-500';
+      case 32: return 'bg-red-600 text-neutral-950 border-red-500';
+      case 64: return 'bg-rose-700 text-neutral-950 border-rose-600';
       case 128: return 'bg-yellow-500 text-neutral-950 border-yellow-400 font-bold';
       case 256: return 'bg-emerald-500 text-neutral-950 border-emerald-400 font-bold';
       case 512: return 'bg-cyan-500 text-neutral-950 border-cyan-400 font-bold';
-      case 1024: return 'bg-blue-600 text-white border-blue-500 font-bold';
+      case 1024: return 'bg-blue-600 text-neutral-950 border-blue-500 font-bold';
       case 2048: return 'bg-amber-400 text-neutral-950 border-amber-300 font-extrabold shadow-lg';
       default: return 'bg-neutral-900/60 text-neutral-500 border-neutral-800/80';
     }

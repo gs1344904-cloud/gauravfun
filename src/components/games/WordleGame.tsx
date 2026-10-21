@@ -90,7 +90,7 @@ export const WordleGame: React.FC = () => {
 
   const getTileBg = (status: string) => {
     switch (status) {
-      case 'CORRECT': return 'bg-emerald-600 text-white border-emerald-500 font-bold';
+      case 'CORRECT': return 'bg-emerald-600 text-neutral-950 border-emerald-500 font-bold';
       case 'PRESENT': return 'bg-amber-500 text-neutral-950 border-amber-400 font-bold';
       case 'ABSENT': return 'bg-neutral-800 text-neutral-400 border-neutral-700';
       default: return 'bg-neutral-900/60 text-white border-neutral-700';

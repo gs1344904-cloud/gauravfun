@@ -17,13 +17,13 @@ const SHAPES = [
 ];
 
 const COLORS = [
-  '#06b6d4', // I cyan
-  '#facc15', // O yellow
-  '#a855f7', // T purple
-  '#f97316', // L orange
-  '#3b82f6', // J blue
-  '#22c55e', // S green
-  '#ef4444', // Z red
+  '#939393', // I cyan
+  '#c9c9c9', // O yellow
+  '#727272', // T purple
+  '#898989', // L orange
+  '#7b7b7b', // J blue
+  '#9b9b9b', // S green
+  '#686868', // Z red
 ];
 
 export const TetrisMatrixGame: React.FC = () => {
